@@ -11,6 +11,8 @@ namespace LogicalProgrammingPractiseProblems
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Logical Problems");
+
+            FibanocciSeries.Fibanocci();
             Console.ReadLine();
         }
     }
