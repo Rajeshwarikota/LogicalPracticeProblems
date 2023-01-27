@@ -12,7 +12,7 @@ namespace LogicalProgrammingPractiseProblems
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Logical Problems");
-            Console.WriteLine("\n1:FibanocciSeries\n2:PrimeNumber\n11:Exit");
+            Console.WriteLine("\n1:FibanocciSeries\n2:PrimeNumber\n3:PerfectNumber\n11:Exit");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -22,6 +22,9 @@ namespace LogicalProgrammingPractiseProblems
                     break;
                 case 2:
                     PrimeNumber.PrimeOrNot();
+                    break;
+                case 3:
+                    PerfectNumber.perfectNo();
                     break;
                 default:
                     Console.WriteLine("Enter the Above Option");
