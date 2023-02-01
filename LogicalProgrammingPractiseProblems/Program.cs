@@ -12,7 +12,7 @@ namespace LogicalProgrammingPractiseProblems
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Logical Problems");
-            Console.WriteLine("\n1:FibanocciSeries\n2:PrimeNumber\n3:PerfectNumber\n4:ReverseNumber\n11:Exit");
+            Console.WriteLine("\n1:FibanocciSeries\n2:PrimeNumber\n3:PerfectNumber\n4:ReverseNumber\n5:StopWatch\n6:Temparetureconversion\n11:Exit");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -28,6 +28,12 @@ namespace LogicalProgrammingPractiseProblems
                     break;
                 case 4:
                     ReverseNumber.Reversing();
+                    break;
+                case 5:
+                    StopWatch.StopWatchSimulation();
+                    break;
+                case 6:
+                    TemperatureConversion.Conversions();
                     break;
                 default:
                     Console.WriteLine("Enter the Above Option");

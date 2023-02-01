@@ -13,6 +13,7 @@ namespace LogicalProgrammingPractiseProblems
             int Number, remainder, reverse = 0;
             Console.WriteLine("Enter a number ");
             Number = Convert.ToInt32(Console.ReadLine());
+
             while (Number > 0)
             {
                 remainder = Number % 10;
