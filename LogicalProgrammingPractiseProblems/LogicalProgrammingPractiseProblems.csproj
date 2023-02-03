@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="BinaryConversion.cs" />
     <Compile Include="FibanocciSeries.cs" />
+    <Compile Include="MonthlyPayment.cs" />
     <Compile Include="NewtonSqrtMethod.cs" />
     <Compile Include="PerfectNumber.cs" />
     <Compile Include="PrimeNumber.cs" />
