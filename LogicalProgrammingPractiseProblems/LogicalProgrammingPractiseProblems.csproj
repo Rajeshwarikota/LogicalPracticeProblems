@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinaryConversion.cs" />
+    <Compile Include="DayOfWeek.cs" />
     <Compile Include="FibanocciSeries.cs" />
     <Compile Include="MonthlyPayment.cs" />
     <Compile Include="NewtonSqrtMethod.cs" />

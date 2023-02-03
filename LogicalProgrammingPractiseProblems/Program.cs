@@ -12,7 +12,7 @@ namespace LogicalProgrammingPractiseProblems
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Logical Problems");
-            Console.WriteLine("\n1:Fibanocci\n2:Prime\n3:Perfect\n4:Reverse\n5:StopWatch\n6:Tempconversion\n7:NewtonSqrt\n8:Binary\n9:MonthlyPay\n11:Exit");
+            Console.WriteLine("\n1:Fibanocci\n2:Prime\n3:Perfect\n4:Reverse\n5:StopWatch\n6:Tempconversion\n7:NewtonSqrt\n8:Binary\n9:MonthPay\n10:Weekdays\n11:Exit");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -43,6 +43,9 @@ namespace LogicalProgrammingPractiseProblems
                     break;
                 case 9:
                     MonthlyPayment.Monthlypay();
+                    break;
+                case 10:
+                    DayOfWeek.WeekDay();
                     break;
 
                 default:
