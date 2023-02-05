@@ -12,7 +12,7 @@ namespace LogicalProgrammingPractiseProblems
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Logical Problems");
-            Console.WriteLine("\n1:Fib\n2:Prime\n3:Perfect\n4:Rev\n5:StopWatch\n6:Tempconv\n7:NewtonSqrt\n8:Binary\n9:MnthPay\n10:Weekday\n11:Coupon\n12:VendingMchinen12:Exit");
+            Console.WriteLine("\n1:Fib\n2:Prime\n3:Perfect\n4:Rev\n5:StopWatch\n6:Tempconv\n7:NewtonSqrt\n8:Binary\n9:MnthPay\n10:Weekday\n11:Coupon\n12:VenMch14:Exit");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -50,7 +50,10 @@ namespace LogicalProgrammingPractiseProblems
                 case 11:
                     CouponNumber.CouponGenerator();
                     break;
-                
+                case 12:
+                    VendingMachine.Notes();
+                    break;
+
 
                 default:
                     Console.WriteLine("Enter the Above Option");
