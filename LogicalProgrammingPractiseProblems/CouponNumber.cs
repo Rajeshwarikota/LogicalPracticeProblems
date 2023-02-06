@@ -12,29 +12,32 @@ namespace LogicalProgrammingPractiseProblems
         {
             int n;
             int count = 0;
-            int k = 0;
+            int num = 0;
             Random random = new Random();
 
             Console.WriteLine("Enter how many Coupons Needed :");
             n = Convert.ToInt32(Console.ReadLine());
             int[] coupon = new int[n];
-            while (k < n)
+            while (num < n)
             { 
-             int rand = random.Next(1,2000);
+                int rand = random.Next(1,100);
                 count++;
-                int check = Array.IndexOf(coupon, rand);
-                if (check == -1)
+                if (coupon.Contains(rand))
                 {
-                    coupon[k] = rand;
-                    k++;
+
+                }
+                else 
+                {
+                    coupon[num] = rand;
+                    num++;
                 }
             }
-            Console.WriteLine("Unique coupon Numbers are");
+            Console.WriteLine("coupon Numbers are");
             foreach (int i in coupon)
             {
-                Console.WriteLine(i);            
+                Console.Write(" "+i);            
             }
-            Console.WriteLine("Count of Random Numbers needed is " +count);
+            Console.WriteLine("\ncount = " +count);
         }
     }
 }
