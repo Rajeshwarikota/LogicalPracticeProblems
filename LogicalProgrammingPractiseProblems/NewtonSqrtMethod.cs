@@ -8,29 +8,27 @@ namespace LogicalProgrammingPractiseProblems
 {
     class NewtonSqrtMethod
     {
-        //public static double Sqrt(double a, int times)
-        //{
-        //    if (a < 0)
-        //        throw new Exception("Can not sqrt a negative number");
-        //    double x = 1;
-        //    while (times-- > 0)
-        //        x = x / 2 + a / (2 * x);
-        //    Console.WriteLine(x);
-        //    return x;
-        //}
+       
         public static void SqrtMethod()
         {
-            double c, epsilon = 1e-15;
+            int c;
             Console.WriteLine("Enter a Number");
-            c = Convert.ToDouble(Console.ReadLine());
-            double t = c;
-            while (Math.Abs(t - c / t) > epsilon * t)
+            c = Convert.ToInt32(Console.ReadLine());
+            if (c > 0)
             {
-                t = ((c / t) + t / 2.0 );
-               
-            }
-            Console.WriteLine(t);
+                double t = c;
+                double epsilon = 1e-15;
+                while (Math.Abs(t - (c / t)) > epsilon * t)
+                {
+                    t = ((c / t) + t) / 2;
 
+                }
+                Console.WriteLine("Square Root of {0} is {1}",c,t);
+            }
+            else 
+            {
+                Console.WriteLine("Enter positive integers");            
+            }
         }
     }
 
